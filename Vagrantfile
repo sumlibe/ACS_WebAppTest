@@ -99,7 +99,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.run_list = %w[
       recipe[yum-epel]
       recipe[nginx]
-      recipe[php-env]
+      recipe[php-env::php55]
     ]
   #   chef.roles_path = "../my-recipes/roles"
   #   chef.data_bags_path = "../my-recipes/data_bags"
