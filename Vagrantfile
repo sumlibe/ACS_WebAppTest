@@ -94,6 +94,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.json = {
       nginx: {
         env: ["php"]
+      },
+      mysql: {
+        server_root_password: 'rootpass'
       }
     }
     chef.run_list = %w[
@@ -101,6 +104,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       recipe[nginx]
       recipe[php-env::php55]
       recipe[git]
+      recipe[mysql]
     ]
   #   chef.roles_path = "../my-recipes/roles"
   #   chef.data_bags_path = "../my-recipes/data_bags"
