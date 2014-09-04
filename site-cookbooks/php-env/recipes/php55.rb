@@ -14,7 +14,7 @@ yum_repository 'remi-php55' do
   action :create
 end
 
-%w{php-fpm php-pecl-zendopcache}.each do |pkg|
+%w{php-fpm php-pecl-zendopcache php-mysql}.each do |pkg|
   package pkg do
     action :install
     notifies :restart, "service[php-fpm]"
