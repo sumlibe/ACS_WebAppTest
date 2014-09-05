@@ -45,12 +45,23 @@ $ bundle exec berks vendor cookbooks
 $ vagrant up
 ```
 
-+ 仮想マシンへの接続
++ 仮想マシンの起動確認
 
 ```
 $ vagrant ssh
 ```
 
-+ 仮想マシン上のウェブサイトへアクセス
++ WWWサーバーの動作確認
 
 ブラウザから[http://192.168.10.10](http://192.168.10.10)にアクセスする
+
++ WebAPIの動作確認
+
+```
+curl http://localhost:8000/memo/write -d "memo=test1"
+curl http://localhost:8000/memo/write -d "memo=test2"
+curl http://localhost:8000/memo/write -d "memo=test3"
+curl http://localhost:8000/memo/read
+```
+
+上記のコマンドが利用できない場合は、Chromeの[Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related)を代替できます。
