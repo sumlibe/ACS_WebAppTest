@@ -1,0 +1,18 @@
+[submodule "mysite/webapi/fuel/core"]
+	path = mysite/webapi/fuel/core
+	url = git://github.com/fuel/core.git
+[submodule "mysite/webapi/fuel/packages/oil"]
+	path = mysite/webapi/fuel/packages/oil
+	url = git://github.com/fuel/oil.git
+[submodule "mysite/webapi/fuel/packages/auth"]
+	path = mysite/webapi/fuel/packages/auth
+	url = git://github.com/fuel/auth.git
+[submodule "mysite/webapi/fuel/packages/parser"]
+	path = mysite/webapi/fuel/packages/parser
+	url = git://github.com/fuel/parser.git
+[submodule "mysite/webapi/fuel/packages/orm"]
+	path = mysite/webapi/fuel/packages/orm
+	url = git://github.com/fuel/orm.git
+[submodule "mysite/webapi/fuel/packages/email"]
+	path = mysite/webapi/fuel/packages/email
+	url = git://github.com/fuel/email.git
