@@ -45,10 +45,16 @@ $ bundle exec berks vendor cookbooks
 $ vagrant up
 ```
 
+### 動作確認
+
 + 仮想マシンへの接続
 
 ```
 $ vagrant ssh
 ```
+
++ テストサイトの確認
+
+ブラウザから[http://192.168.10.10](http://192.168.10.10)にアクセスする
 
 
