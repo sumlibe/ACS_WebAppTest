@@ -56,13 +56,20 @@ $ vagrant ssh
 ブラウザから[http://192.168.10.10](http://192.168.10.10)、[http://192.168.10.11](http://192.168.10.11)にアクセスする
 
 
-+ WebAPIの動作確認
++ WebAPI呼び出しの動作確認
 
 ```
-curl http://localhost:8000/memo/write -d "memo=test1"
-curl http://localhost:8000/memo/write -d "memo=test2"
-curl http://localhost:8000/memo/write -d "memo=test3"
-curl http://localhost:8000/memo/read
+curl http://192.168.10.10/memo/write -d "memo=test1"
+curl http://192.168.10.10/memo/write -d "memo=test2"
+curl http://192.168.10.10/memo/write -d "memo=test3"
+curl http://192.168.10.10/memo/read
 ```
 
 上記のコマンドが利用できない場合は、Chromeの[Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related)を代替できます。
+
++ FuelPHPからWebAPI呼び出しの動作確認（仮想マシンにログインした状態）
+
+```
+$ cd /vagrant_mysite/webapi
+$ php oil r webapi
+```
