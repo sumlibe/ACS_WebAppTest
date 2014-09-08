@@ -21,7 +21,7 @@ $ gem install bundler
 #### 仮想マシン環境の取得（初回のみ）
 
 ```
-$ git clone git@github.com:sumlibe/ACS_WebAppTest.git
+$ git clone git@github.com:sumlibe/ACS_WebAppTest.git --recursive
 $ cd ACS_WebAppTest
 ```
 
