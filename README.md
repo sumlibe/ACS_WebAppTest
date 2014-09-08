@@ -5,12 +5,14 @@ ACS_WebAppTest
 ※[Virtualbox](https://www.virtualbox.org/wiki/Downloads)、[Vagrant](https://www.vagrantup.com/downloads.html)は事前にインストールしておいてください。
 
 #### Vagrantプラグインのインストール（インストール済の場合は不要）
+`vagrant plugin list`でインストール済のプラグインを確認できます
 
 ```
 $ vagrant plugin install vagrant-omnibus
 ```
 
 #### Bundlerのインストール（インストール済の場合は不要）
+`gem list --local`でインストール済のプラグインを確認できます
 
 ```
 $ gem install bundler
