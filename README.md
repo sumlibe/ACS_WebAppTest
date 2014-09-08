@@ -83,7 +83,6 @@ curl http://192.168.10.11/memo/read
 ```
 curl http://192.168.10.10/memo/read_backend
 ```
-curlコマンドが利用できない場合は、Chromeの[Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related)で代用できます。
 
 #### FuelPHPからWebAPI呼び出しの動作確認（仮想マシンにログインした状態）
 
@@ -91,3 +90,10 @@ curlコマンドが利用できない場合は、Chromeの[Advanced REST client]
 $ cd /vagrant_mysite/webapi
 $ php oil r webapi
 ```
+
+### ＜その他＞
+
+#### WebAPIの呼び出しテストツール
+
++ [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related)（Chromeの拡張機能）
+
