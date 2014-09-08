@@ -1,11 +1,8 @@
 ACS_WebAppTest
 ==============
 
-※Virtualbox、Vagrantは事前にインストールしておいてください。
-
-
 ### ＜事前準備＞
-==============
+※[Virtualbox](https://www.virtualbox.org/wiki/Downloads)、[Vagrant](https://www.vagrantup.com/downloads.html)は事前にインストールしておいてください。
 
 #### Vagrantプラグインのインストール（インストール済の場合は不要）
 
@@ -38,8 +35,7 @@ $ bundle install --path vendor/bundle
 $ bundle exec berks vendor cookbooks
 ```
 
-### 動作確認
-==============
+### ＜動作確認＞
 
 #### 仮想マシン環境の起動
 
