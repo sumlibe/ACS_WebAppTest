@@ -6,7 +6,8 @@ return array(
     array(
       'default' => 
       array(
-        0 => '002_create_memos',
+        0 => '001_create_notes',
+        1 => '002_create_memos',
       ),
     ),
     'module' => 
