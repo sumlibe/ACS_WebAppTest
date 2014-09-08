@@ -5,14 +5,14 @@ ACS_WebAppTest
 ※[Virtualbox](https://www.virtualbox.org/wiki/Downloads)、[Vagrant](https://www.vagrantup.com/downloads.html)は事前にインストールしておいてください。
 
 #### Vagrantプラグインのインストール（インストール済の場合は不要）
-`vagrant plugin list`でインストール済のプラグインを確認できます
+`vagrant plugin list`でインストール済のプラグインを確認できます。
 
 ```
 $ vagrant plugin install vagrant-omnibus
 ```
 
 #### Bundlerのインストール（インストール済の場合は不要）
-`gem list --local`でインストール済のプラグインを確認できます
+`gem list --local`でインストール済のプラグインを確認できます。
 
 ```
 $ gem install bundler
@@ -27,11 +27,15 @@ $ cd ACS_WebAppTest
 
 #### Gemのインストール（初回のみ）
 
+Gemfileに登録しているGem（Chef, knife-solo, berkshelf）がインストールされます。
+
 ```
 $ bundle install --path vendor/bundle
 ```
 
 #### サードパーティcookbookの取得（初回のみ）
+
+Berksfileに登録しているCookbook（依存関係を含む）がインストールされます。
 
 ```
 $ bundle exec berks vendor cookbooks
