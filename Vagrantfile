@@ -44,6 +44,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ln -s /vagrant_mysite/webapi/public /usr/share/nginx/html/public
     echo 'create database fuel_dev' | mysql -u root -prootpass
     cd /vagrant_mysite/webapi
+    php composer.phar update
     php oil refine migrate:current
   EOT
 end
